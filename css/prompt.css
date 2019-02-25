@@ -1,0 +1,84 @@
+/*Bramka OR*/
+
+/*Bramka AND*/
+
+/*Bramka NOT*/
+
+/*Bramka NOR*/
+[prompt-nor] {
+	position: relative;
+}
+[prompt-nor]::before {
+	content: attr(prompt-nor);
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	border: 1px #fff solid;
+	transition: .5s ease-in-out;
+	transition-property: opacity, visibility;
+	border-radius: 10px;
+	font-weight: bold;
+	width: 60px;
+}
+[prompt-nor]:hover::before {
+	opacity: 1;
+	visibility: visible;
+	width: 60px;
+}
+/*Bramka NAND*/
+[prompt-nand] {
+	position: relative;
+}
+[prompt-nand]::before {
+	content: attr(prompt-nand);
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	border: 1px #ccc solid;
+	transition: .5s ease-in-out;
+	transition-property: opacity, visibility;
+	border-radius: 10px;
+	font-weight: bold;
+	width: 70px;
+}
+[prompt-nand]:hover::before {
+	opacity: 1;
+	visibility: visible;
+	width: 70px;
+}
+/*Bramka XOR*/
+[prompt-xor] {
+	position: relative;
+}
+[prompt-xor]::before {
+	content: attr(prompt-xor);
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	border: 1px #ccc solid;
+	transition: .5s ease-in-out;
+	transition-property: opacity, visibility;
+	border-radius: 10px;
+	font-weight: bold;
+	width: 110px;
+}
+[prompt-xor]:hover::before {
+	opacity: 1;
+	visibility: visible;
+	width: 110px;
+}

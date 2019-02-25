@@ -1,0 +1,22 @@
+/*Przycisk "Pokaż więcej/Pokaż mniej"*/
+.description-button {
+    color: #7F7F7F;
+	display: inline;
+	border-radius: 1000px;
+}
+.description-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+/*Przycisk "Opis/Sekwencje"*/
+.general-button {
+    text-align: left;
+	display: inline;
+	cursor: pointer;
+}
+.paragraf-button {
+	color: #c34f4f;
+}
+.sequence-button {
+	color: #ffffff;
+}

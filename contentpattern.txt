@@ -1,0 +1,142 @@
+﻿Informacja:
+Wszystkie elementy które znajdują się w <!--element--> to zmienne które są zależne od danej bramki.
+
+
+<!--Zawartość strony-->
+
+<main>
+	
+	<!--Bramka <!--Nazwa bramki-->-->
+
+	<div code="<!--Kod bramki-->" class="article">
+
+		<div code="<!--Kod bramki-->" class="name">
+
+			<span code="<!--Kod bramki-->" class="animation">
+
+				<b code="<!--Kod bramki-->"><!--Nazwa bramki--></b>
+				<b code="<!--Kod bramki-->">-</b> 
+
+					<div code="<!--Kod bramki-->" id="paragraf-description-<!--Nazwa bramki-->-button" class="general-button paragraf-button" onClick="description(<!--Numer bramki-->)">Opis</div>	
+
+					<b code="<!--Kod bramki-->">|</b>
+
+					<div code="<!--Kod bramki-->" id="paragraf-sequence-<!--Nazwa bramki-->-button" class="general-button sequence-button" onClick="sequence(<!--Numer bramki-->)">Sekwencje</div>
+
+			</span>
+
+		</div>
+
+		<div code="<!--Kod bramki-->" id="paragraf-description-<!--Nazwa bramki-->">
+
+			<div code="<!--Kod bramki-->" class="device">
+
+				<div code="<!--Kod bramki-->" class="device-image">
+
+					<img code="<!--Kod bramki-->" alt="Miejsce na obrazek" class="device-img" src="<!--Ścieżka do zdjęcia-->">
+
+					<a code="<!--Kod bramki-->" href="<!--Ścieżka do zdjęcia-->" data-lightbox="image-<!--Numer bramki-->" data-title="Naciśnij ESC aby wyjść" class="scale"><span class="icon"><i code="<!--Kod bramki-->" class="icon-search"></i><p>Powiększ</p></span></a>
+
+				</div>
+
+			</div>
+
+			<div code="<!--Kod bramki-->" class="describe">
+
+				<div code="<!--Kod bramki-->" id="description-<!--Nazwa bramki-->-less" class="description">
+
+					<span code="<!--Kod bramki-->" class="animation">
+
+						<!--Mniejszy opis bramki-->
+
+						<span code="<!--Kod bramki-->" id="button-<!--Nazwa bramki-->-less" class="description-button" onClick="more(<!--Numer bramki-->)">Pokaż więcej</span>
+
+					</span>
+
+				</div>
+
+				<div code="<!--Kod bramki-->" id="description-<!--Nazwa bramki-->-more" class="description hidden_element">
+
+					<span code="<!--Kod bramki-->" class="animation">
+
+						<!--Większy opis bramki-->
+
+						<span code="<!--Kod bramki-->" id="button-<!--Nazwa bramki-->-more" class="description-button" onClick="less(<!--Numer bramki-->)">Pokaż mniej</span>
+
+					</span>
+
+				</div>
+
+			</div>
+
+			<div code="<!--Kod bramki-->" class="symbol">
+
+				<div code="<!--Kod bramki-->" class="symbol-img">
+
+					<div code="<!--Kod bramki-->" class="information">
+
+						<img code="<!--Kod bramki-->" alt="Miejsce na obraz" title="Symbol dla bramki <!--Nazwa bramki-->" class="symbol-img" src="<!--Ścieżka do zdjęcia-->">
+
+						<p code="<!--Kod bramki-->" class="desc">Symbol dla bramki <!--Nazwa bramki--></p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div code="<!--Kod bramki-->" class="truth-table">
+
+				<div code="<!--Kod bramki-->" class="truth-table-img">
+
+					<div code="<!--Kod bramki-->" class="information">
+
+						<img code="<!--Kod bramki-->" alt="Miejsce na obraz" title="Tabela prawdy dla bramki <!--Nazwa bramki-->" class="truth-table-img" src="<!--Ścieżka do zdjęcia-->">
+
+						<p code="<!--Kod bramki-->" class="desc">Tabela prawdy dla bramki <!--Nazwa bramki--></p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div code="<!--Kod bramki-->" class="hidden_element" id="paragraf-sequence-<!--Nazwa bramki-->">
+
+			<div code="<!--Kod bramki-->" class="sequence">
+
+				<div code="<!--Kod bramki-->" class="sequence-image">
+
+					<div code="<!--Kod bramki-->" class="information">
+
+						<img code="<!--Kod bramki-->" alt="Miejsce na obraz" title="Sekwencja dla bramki <!--Nazwa bramki-->" class="sequence-img" src="<!--Ścieżka do zdjęcia-->">
+
+						<p code="<!--Kod bramki-->" class="desc sequence-desc">Sekwencja dla bramki <!--Nazwa bramki--></p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div code="<!--Kod bramki-->" class="describe">
+
+				<div code="<!--Kod bramki-->" class="sequence-description">
+
+					<span code="<!--Kod bramki-->" class="animation">
+
+						<!--Opis sekwencji dla bramki-->
+
+					</span>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</main>	

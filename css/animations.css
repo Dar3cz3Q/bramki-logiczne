@@ -1,0 +1,26 @@
+/* Animacje */
+@keyframes change {
+ 0% {
+	opacity: 0;
+}
+ 100% {
+	opacity: 1;
+}
+}
+@keyframes logo {
+ 0% {
+ 	opacity: 0;
+ 	transform: translateY(10%);
+}
+ 100% {
+ 	opacity: 1;
+}
+}
+.animation {
+	animation-name: change;
+	animation-duration: 2s;
+}
+.logo-animation {
+	animation-name: logo;
+	animation-duration: 1s;
+}

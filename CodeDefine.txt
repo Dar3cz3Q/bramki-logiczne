@@ -1,0 +1,6 @@
+OR -> 3nz6 | 0
+AND -> qRgK | 1
+NOT -> Nxpf | 2
+NOR -> UgzY | 3
+NAND -> WFwT | 4
+XOR -> s9hW | 5

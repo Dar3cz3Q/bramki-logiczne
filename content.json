@@ -1,0 +1,116 @@
+{
+    "OR": {
+        "name": "OR",
+		"additional_style_element": "-first",
+		"id": "or",
+		"code": "3nz6",
+		"number": "0",
+		"description": {
+			"device_image": "img/OR/Device.jpg",
+			"device_image_id": "1",
+			"description_content_less": "<b>Bramka OR (LUB)</b> - realizuje sumę logiczną Y=A+B lub Y=AvB.<br><b>Funktor OR</b> da na wyjściu Y stan 1 wtedy, gdy przynajmniej na jednym wejściu będzie stan 1. Stan 0 na wyjściu Y pojawi się tylko wtedy, gdy na wejściach A i B będzie stan 0.<br>",
+			"description_content_more": "Istnieją również bramki OR mające kilka wejść, np. A, B, C, D, które opisuje funkcja Y=A+B+C+D.",
+			"symbol_image": "img/OR/B.OR.png",
+			"truth_table_image": "img/OR/T.OR.png"
+	  },
+	  "sequence": {
+			"sequence_image": "img/OR/Sequence.png",
+			"sequence_content": "Na wyjściu znajdzie się stan niski, ponieważ po przejściu jednego stanu wysokiego przez bramkę OR, pozostanie stan wysoki, a po przejściu przez bramkę NAND dwóch stanów wysokich, znajdzie się na wyjściu stan niski i gdy przez bramkę AND przejdzie jeden stan niski i jeden wysoki, na wyjściu znajdzie się stan niski."
+		}
+	},
+	"AND": {
+		"name": "AND",
+		"additional_style_element": "",
+		"id": "and",
+		"code": "qRgK",
+		"number": "1",
+		"description": {
+			"device_image": "img/AND/Device.png",
+			"device_image_id": "2",
+			"description_content_less": "<b>Bramka AND (I)</b> - realizuje iloczyn logiczny Y=A*B lub Y=A˄B.<br><b>Bramka AND</b> da na wyjściu Y stan 0 wtedy, gdy przynajmniej na jednym wyjściu będzie stan 0. Stan 1 na wyjściu Y pojawi się tylko wtedy, gdy na wejściach A i B będzie stan 1.",
+			"description_content_more": "Istnieją również bramki AND mające kilka wejść, np. A, B, C, które opisuje funkcja Y=A*B*C.",
+			"symbol_image": "img/AND/B.AND.png",
+			"truth_table_image": "img/AND/T.AND.png"
+		},
+		"sequence": {
+			"sequence_image": "img/AND/Sequence.png",
+			"sequence_content": "Na wyjściu 3 znajdzie się stan wysoki, ponieważ po przejściu dwóch stanów wysokich przez bramkę AND, pozostanie stan wysoki. Na wyjściu 8 i 11 znajdzie się stan niski, ponieważ po przejściu jednego stanu niskiego przez bramkę AND, pozostanie stan niski."
+		}
+	},
+	"NOT": {
+		"name": "NOT",
+		"additional_style_element": "",
+		"id": "not",
+		"code": "Nxpf",
+		"number": "2",
+		"description": {
+			"device_image": "img/NOT/Device.png",
+			"device_image_id": "3",
+			"description_content_less": "<b>Bramka NOT (NIE)</b> - realizuje negację Y=<o class='o'>A</o>.<br><b>Funktor NOT</b> da na wyjściu Y stan 1 tylko wtedy, gdy na wejściu będzie stan 0. Stan 0 na wyjściu Y pojawi się tylko wtedy, gdy na wejściu A będzie stan 1.<br>",
+			"description_content_more": "Bramka NOT wykonuje inwersję, zmieniając 1 na 0 i odwrotnie.",
+			"symbol_image": "img/NOT/B.NOT.png",
+			"truth_table_image": "img/NOT/T.NOT.png"
+		},
+		"sequence": {
+			"sequence_image": "img/NOT/Sequence.png",
+			"sequence_content": "Na wyjściu znajdzie się stan niski, ponieważ po przejściu 2 stanów wysokich i jednego stanu niskiego przez trzy bramki NOT, na dwóch znajdzie się stan niski a na jednym stan wysoki, następnie po przejściu stanu wysokiego i niskiego przez bramkę AND, pozostanie stan niski a po przejściu dwóch stanów niskich przez bramkę AND, także znajdzie się na wyjściu stan niski, na końcu po przejściu dwóch stanów niskich przez bramkę OR, na wyjściu zostanie stan niski."
+		}
+	},
+	"NOR": {
+		"name": "NOR",
+		"additional_style_element": "",
+		"id": "nor",
+		"code": "UgzY",
+		"number": "3",
+		"description": {
+			"device_image": "img/NOR/Device.png",
+			"device_image_id": "4",
+			"description_content_less": "<b>Bramka <span prompt-nor='NOT-OR'>NOR</span> (NIE-LUB)</b> - realizuje sumę logiczną z inwersją Y=<o class='o'>A+B</o> lub Y=<o class='o'>AvB</o>.<br><b>Bramka NOR</b> wykonuje operacje odwrotnie niż bramka OR. Funktor NOR da na wyjściu Y stan 0 wtedy, gdy przynajmniej na jednym wejściu będzie stan 1. Stan 1 na wyjściu Y pojawi się tylko wtedy, gdy na wejściach A i B będzie stan 0.",
+			"description_content_more": "Istnieją również bramki NOR mające kilka wejść, np. A, B, C, D, które opisuje funkcja Y=<o class='o'>A+B+C+D</o>.",
+			"symbol_image": "img/NOR/B.NOR.png",
+			"truth_table_image": "img/NOR/T.NOR.png"
+		},
+		"sequence": {
+			"sequence_image": "img/NOR/Sequence.png",
+			"sequence_content": "Na wyjściu znajdzie się stan niski, ponieważ po przejściu dwóch stanów wysokich przez bramkę NOR, na wyjściu zostanie stan niski, gdy przez bramkę NAND przejdą dwa stany niskie, na wyjściu znajdzie się stan wysoki, i gdy przez bramkę XOR przejdzie stan niski i wysoki, to na wyjściu znajdzie się stan niski."
+		}
+	},
+	"NAND": {
+		"name": "NAND",
+		"additional_style_element": "",
+		"id": "nand",
+		"code": "WFwT",
+		"number": "4",
+		"description": {
+			"device_image": "img/NAND/Device.png",
+			"device_image_id": "5",
+			"description_content_less": "<b>Bramka <span prompt-nand='NOT-AND'>NAND</span> (NIE-I)</b> - realizuje iloczyn logiczny z inwersją Y=<o class='o'>A*B</o> lub Y=<o class='o'>A˄B</o>.<br><b>Bramka NAND</b> wykonuje operacje odwrotnie niż AND. Bramka NAND da na wyjściu Y stan 1 wtedy, gdy przynajmniej na jednym wejściu będzie stan 0. Stan 0 na wyjściu Y pojawi się tylko wtedy, gdy na wejściach A i B będzie stan 1.",
+			"description_content_more": "Istnieją bramki NAND mające kilka wejść, np. A, B, C, które opisuje funkcja Y=<o class='o'>A*B*C</o>.",
+			"symbol_image": "img/NAND/B.NAND.png",
+			"truth_table_image": "img/NAND/T.NAND.png"
+		},
+		"sequence": {
+			"sequence_image": "img/NAND/Sequence.png",
+			"sequence_content": "Na wyjściu 7 znajdzie się stan niski, a na wyjściu 8 znajdzie się stan wysoki, ponieważ po przejściu przez bramkę NAND jednego stanu wysokiego, na wyjściu znajduje się stan wysoki, a gdy przez bramkę NAND przejdą dwa stany wysokie, na wyjściu znajdzie się stan niski."
+		}
+	},
+	"XOR": {
+		"name": "XOR",
+		"additional_style_element": "",
+		"id": "xor",
+		"code": "s9hW",
+		"number": "5",
+		"description": {
+			"device_image": "img/XOR/Device.png",
+			"device_image_id": "6",
+			"description_content_less": "<b>Bramka <span prompt-xor='EXCLUSIVE-OR'>XOR</span> (ALBO)</b> - realizuje różnicę symetryczną (sumę poprzeczna) Y=<o class='o'>A</o>*B+A*<o class='o'>B</o> lub Y=<o class='o'>A</o>˄BvA˄<o class='o'>B</o> lub Y=A&oplus;B.",
+			"description_content_more": "<b>Bramka XOR</b> da na wyjściu Y stan 1 wtedy, gdy na pierwszym wejściu będzie stan 1,. Stan 0 na wyjściu Y pojawi się tylko wtedy, gdy na obydwu wejściach A i B będzie stan 1 lub 0.",
+			"symbol_image": "img/XOR/B.XOR.png",
+			"truth_table_image": "img/XOR/T.XOR.png"
+		},
+		"sequence": {
+			"sequence_image": "img/XOR/Sequence.png",
+			"sequence_content": "Na wyjściu znajdzie się stan niski, ponieważ po przejściu przez bramkę OR dwóch stanów wysokich, na wyjściu znajdzie się stan wysoki, następnie gdy przez bramkę AND przepuścimy dwa stany wysokie, na wyjściu znajdzie się stan wysoki i gdy go zaprzeczymy bramką NOT, na wyjściu znajdzie się stan niski, więc gdy przez bramkę AND przepuścimy  stan niski i wysoki, na wyjściu znajdzie się stan niski."
+		}
+	}
+}
