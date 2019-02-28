@@ -1,7 +1,8 @@
+//Pobieranie zawartości z pliku "content.json"
 function addcontent() {
 	$.ajax({
         method: "GET",
-        url: "apicontent.php",
+        url: "content.json",
         contentType: "application/json",
         dataType: "JSON",
 		success: function (content) {
@@ -12,7 +13,7 @@ function addcontent() {
 		}
 	});
 }
-
+//Tworzenie zawartości na stronie za pomocą pętli "each"
 function success(content) {
 	$("main").html(`
 		<div id="content"></div>
@@ -178,7 +179,7 @@ function success(content) {
 `)
 	});
 }
-
+//Komunikat jeżeli pobieranie się nie powiodło
 function error(content) {
 	$("main").html(`
 		<div id="content">Pobranie zawartości nie powiodło się.</div>

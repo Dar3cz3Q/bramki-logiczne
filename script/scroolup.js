@@ -2,7 +2,7 @@ jQuery(function ($) {
 	$.scrollTo(0);
 
 	$('#name-or-link').click(function () {
-		$.scrollTo($('#or'), 500);
+		$.scrollTo($('body'), 500);
 	});
 	$('#name-and-link').click(function () {
 		$.scrollTo($('#and'), 500);
