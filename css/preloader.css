@@ -1,85 +1,85 @@
 /*Ładowanie strony*/
 #preloader {
-	background-image: url(backgrounds/back.png); /*from http://subtlepatterns.com*/
-	background-color: #303030;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1000;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: opacity .35s ease;
+    background-image: url(backgrounds/back.png); /*from http://subtlepatterns.com*/
+    background-color: #303030;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .35s ease;
 }
 .pre_bramki {
-	color: #c34f4f;
-	text-shadow: 0px 0px 30px #c34f4f;
+    color: #c34f4f;
+    text-shadow: 0px 0px 30px #c34f4f;
 }
 .pre_logiczne {
-	color: #ffffff;
-	text-shadow: 0px 0px 30px #ffffff;
+    color: #ffffff;
+    text-shadow: 0px 0px 30px #ffffff;
 }
 .letter {
-	animation: show-hide 2s ease infinite;
-	font-size: 100px;
-	letter-spacing: 5px;
+    animation: show-hide 2s ease infinite;
+    font-size: 100px;
+    letter-spacing: 5px;
 }
 .letter:nth-child(2) {
-	animation-delay: 100ms;
+    animation-delay: 100ms;
 }
 .letter:nth-child(3) {
-	animation-delay: 200ms;
+    animation-delay: 200ms;
 }
 .letter:nth-child(4) {
-	animation-delay: 300ms;
+    animation-delay: 300ms;
 }
 .letter:nth-child(5) {
-	animation-delay: 400ms;
+    animation-delay: 400ms;
 }
 .letter:nth-child(6) {
-	animation-delay: 500ms;
+    animation-delay: 500ms;
 }
 .letter:nth-child(7) {
-	animation-delay: 600ms;
+    animation-delay: 600ms;
 }
 .letter:nth-child(8) {
-	animation-delay: 700ms;
+    animation-delay: 700ms;
 }
 .letter:nth-child(9) {
-	animation-delay: 800ms;
+    animation-delay: 800ms;
 }
 .letter:nth-child(10) {
-	animation-delay: 900ms;
+    animation-delay: 900ms;
 }
 .letter:nth-child(11) {
-	animation-delay: 1000ms;
+    animation-delay: 1000ms;
 }
 .letter:nth-child(12) {
-	animation-delay: 1100ms;
+    animation-delay: 1100ms;
 }
 .letter:nth-child(13) {
-	animation-delay: 1200ms;
+    animation-delay: 1200ms;
 }
 .letter:nth-child(14) {
-	animation-delay: 1300ms;
+    animation-delay: 1300ms;
 }
 .letter:nth-child(15) {
-	animation-delay: 1400ms;
+    animation-delay: 1400ms;
 }
  @keyframes show-hide {
  0% {
- 	opacity: 0;
+ opacity: 0;
 }
  100% {
- 	opacity: 1;
+ opacity: 1;
 }
 }
 #preloader.preloader-hidding {
-	opacity: 0;
+    opacity: 0;
 }
 #preloader.preloader-hidden {
-	display: none;
+    display: none;
 }

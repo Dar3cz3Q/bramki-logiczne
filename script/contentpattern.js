@@ -1,5 +1,5 @@
 function contentpattern() {
-	$("#logo").html(`
+    $("#logo").html(`
 		<a href="contentpattern.txt" title="Zobacz jak wygląda struktura strony dla bramki" target="_blank" class="link">
 					
 			<span class="logo logo-animation">

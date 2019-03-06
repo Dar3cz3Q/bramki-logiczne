@@ -1,46 +1,48 @@
+//Wywołanie funkcji po załadowaniu strony
+window.addEventListener("load", addcontent);
 //Pobieranie zawartości z pliku "content.json"
 function addcontent() {
-	$.ajax({
+    $.ajax({
         method: "GET",
         url: "content.json",
         contentType: "application/json",
         dataType: "JSON",
-		success: function (content) {
-			success(content);
-		},
-		error: function (content) {
-			error(content);
-		}
-	});
+        success: function (content) {
+            success(content);
+        },
+        error: function (content) {
+            error(content);
+        }
+    });
 }
 //Tworzenie zawartości na stronie za pomocą pętli "each"
 function success(content) {
-	$("main").html(`
+    $("main").html(`
 		<div id="content"></div>
 	`);
-	
-	$.each(content, function (i, item){
-		var name = item.name,
-			id = item.id,
-			style_element = item.additional_style_element,
-			code = item.code,
-			number = item.number,
-			device_image = item.description.device_image,
-			device_image_id = item.description.device_image_id,
-			description_less = item.description.description_content_less,
-			description_more = item.description.description_content_more,
-			symbol = item.description.symbol_image,
-			table = item.description.truth_table_image,
-			sequence_image = item.sequence.sequence_image,
-			sequence_content = item.sequence.sequence_content;
-        
-        if(style_element === undefined) {
+
+    $.each(content, function (i, item) {
+        var name = item.name,
+            id = item.id,
+            style_element = item.additional_style_element,
+            code = item.code,
+            number = item.number,
+            device_image = item.description.device_image,
+            device_image_id = item.description.device_image_id,
+            description_less = item.description.description_content_less,
+            description_more = item.description.description_content_more,
+            symbol = item.description.symbol_image,
+            table = item.description.truth_table_image,
+            sequence_image = item.sequence.sequence_image,
+            sequence_content = item.sequence.sequence_content;
+
+        if (style_element === undefined) {
             var style = "article";
         } else {
             var style = style_element;
         }
-		
-		$("#content").append(`
+
+        $("#content").append(`
 
 		<!--Bramka ${name}-->
 
@@ -177,11 +179,15 @@ function success(content) {
 
 			</div>
 `)
-	});
+    });
+    //Wywołanie funkcji która utworzy pasek progressu na stronie
+    progress();
 }
 //Komunikat jeżeli pobieranie się nie powiodło
 function error(content) {
-	$("main").html(`
-		<div id="content">Pobranie zawartości nie powiodło się.</div>
+    $("main").html(`
+		<div id="content">
+            <div class="error"><span class="error_text">Pobranie zawartości nie powiodło się.</span></div>
+        </div>
 	`);
 }
