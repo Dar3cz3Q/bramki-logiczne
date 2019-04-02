@@ -43,4 +43,4 @@ function progress() {
 
     window.addEventListener('scroll', throttle(calculateProgress, 100));
     window.addEventListener('scroll', debounce(calculateProgress, 200));
-};
+}

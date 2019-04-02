@@ -57,11 +57,11 @@ function success(content) {
 						<b code="${code}">${name}</b>
 						<b code="${code}">-</b> 
 
-							<div code="${code}" id="paragraf-description-${id}-button" class="general-button paragraf-button" onClick="description(${number})">Opis</div>	
+							<div code="${code}" forgate="${id}" id="paragraf-description-${id}-button" class="general-button paragraf-button">Opis</div>	
 
 							<b code="${code}">|</b>
 
-							<div code="${code}" id="paragraf-sequence-${id}-button" class="general-button sequence-button" onClick="sequence(${number})">Sekwencje</div>
+							<div code="${code}" forgate="${id}" id="paragraf-sequence-${id}-button" class="general-button sequence-button">Sekwencje</div>
 
 					</span>
 
@@ -89,7 +89,7 @@ function success(content) {
 
 								${description_less}
 
-								<span code="${code}" id="button-${id}-less" class="description-button" onClick="more(${number})">Pokaż więcej</span>
+								<span forgate="${id}" code="${code}" id="button-${id}-less" class="description-button more">Pokaż więcej</span>
 
 							</span>
 
@@ -101,7 +101,7 @@ function success(content) {
 
 								${description_more}
 
-								<span code="${code}" id="button-${id}-more" class="description-button" onClick="less(${number})">Pokaż mniej</span>
+								<span forgate="${id}" code="${code}" id="button-${id}-more" class="description-button less">Pokaż mniej</span>
 
 							</span>
 
@@ -182,6 +182,9 @@ function success(content) {
     });
     //Wywołanie funkcji która utworzy pasek progressu na stronie
     progress();
+    setlisteners_seque_desc();
+    setlisteners_more_less();
+    title();
 }
 //Komunikat jeżeli pobieranie się nie powiodło
 function error(content) {
