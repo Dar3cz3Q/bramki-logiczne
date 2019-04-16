@@ -1,6 +1,6 @@
 //Zmiana pomiedzy sekwencja a bramkami
 function setlisteners_seque_desc () {
-    for (let i=0; i < 5; i++) {
+    for (let i=0; i < 6; i++) {
         var sequence_button = document.getElementsByClassName("sequence-button")[i];
         sequence_button.addEventListener("click", sequence);
         var paragraf_button = document.getElementsByClassName("paragraf-button")[i];
