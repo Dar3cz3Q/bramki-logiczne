@@ -1,6 +1,6 @@
 //Mniej/Wiecej Opisu
 function setlisteners_more_less () {
-    for (let i=0; i < 5; i++) {
+    for (let i=0; i < 6; i++) {
         var more_button = document.getElementsByClassName("more")[i];
         more_button.addEventListener("click", more);
         var less_button = document.getElementsByClassName("less")[i];
