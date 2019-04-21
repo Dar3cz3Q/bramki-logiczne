@@ -57,11 +57,11 @@ function success(content) {
 						<b code="${code}">${name}</b>
 						<b code="${code}">-</b> 
 
-							<div code="${code}" forgate="${id}" id="paragraf-description-${id}-button" class="general-button paragraf-button">Opis</div>	
+							<div code="${code}" data-forgate="${id}" id="paragraf-description-${id}-button" class="general-button paragraf-button">Opis</div>	
 
 							<b code="${code}">|</b>
 
-							<div code="${code}" forgate="${id}" id="paragraf-sequence-${id}-button" class="general-button sequence-button">Sekwencje</div>
+							<div code="${code}" data-forgate="${id}" id="paragraf-sequence-${id}-button" class="general-button sequence-button">Sekwencje</div>
 
 					</span>
 
@@ -89,7 +89,7 @@ function success(content) {
 
 								${description_less}
 
-								<span forgate="${id}" code="${code}" id="button-${id}-less" class="description-button more">Pokaż więcej</span>
+								<span data-forgate="${id}" code="${code}" id="button-${id}-less" class="description-button more">Pokaż więcej</span>
 
 							</span>
 
@@ -101,7 +101,7 @@ function success(content) {
 
 								${description_more}
 
-								<span forgate="${id}" code="${code}" id="button-${id}-more" class="description-button less">Pokaż mniej</span>
+								<span data-forgate="${id}" code="${code}" id="button-${id}-more" class="description-button less">Pokaż mniej</span>
 
 							</span>
 
