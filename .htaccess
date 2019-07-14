@@ -1,0 +1,10 @@
+###PROTECT FILES###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allwo,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule cotechservice-main index.html
+RewriteRule
+RewriteRule
